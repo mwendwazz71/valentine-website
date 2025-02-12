@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .message {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey My Love ❤️</h1>
+        <p>Will you be my Valentine? 🥺</p>
+        <img src="your-first-image.jpg" alt="Us Together">
+        <img src="your-second-image.jpg" alt="Us Together">
+        <br>
+        <div class="button-container">
+            <button onclick="showMessage()">Yes</button>
+            <button onclick="showNoMessage()">No</button>
+        </div>
+        <div class="message" id="valentineMessage">
+            <p>Heeeeey my boo😩🫶🏾❤</p>
+            <p>I was washing my clothes a while ago including the masai shuka, which had some white hard patches. Then I remembered that it was from the day your mum came looking to find us together💀. Then we had to had the shuka kwa mlango and used superglue to stick it to the wall😂😂😂 and ended staying in the house ndo tusionekane😂😂💀🤣. Pamoja na other nostalgic memories we did together. God I miss those times!!!</p>
+            <p>Anyway I’ve been thinking about you a lot lately, as I always do, but today I just felt an overwhelming need to remind you of how incredibly proud I am of you. You’ve worked so hard, and seeing you complete your CNA course and land a job—wow—my heart is bursting with admiration🤭🙇🏾‍♂.</p>
+            <p>Even though we’re thousands of kilometers apart, I want you to know that I believe in us—every single day🙇🏾‍♂. The distance may test us at times, but I’m confident that we can overcome anything together, because our love is stronger than any miles that separate us🫂.</p>
+            <p>With Valentine’s Day approaching, I’ve been thinking about how special you are to me and how much I truly cherish every moment we share, even from afar❤😩. I can’t imagine a more perfect person to ask this, so here it is: Would you do me the honor of being my Valentine this year? It would mean the world to me, and I’m already looking forward to all the moments we’ll share together in the future.</p>
+        </div>
+        <div class="message" id="noMessage" style="display: none;">
+            <p>💔 Oh no! That hurts... But I still love you anyway! 🥺❤</p>
+        </div>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('valentineMessage').style.display = 'block';
+            document.getElementById('noMessage').style.display = 'none';
+        }
+        function showNoMessage() {
+            document.getElementById('noMessage').style.display = 'block';
+            document.getElementById('valentineMessage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
